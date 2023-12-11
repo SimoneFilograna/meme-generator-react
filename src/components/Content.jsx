@@ -49,7 +49,7 @@ function Content() {
         // use random number for get 1 img from array
         const url = imgArray[randomNumber].url
 
-        // set select img as img for state
+        // set selected img as img for state
         setMeme(prevObj => {
             return {
                 ...prevObj,
