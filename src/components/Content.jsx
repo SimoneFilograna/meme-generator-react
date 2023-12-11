@@ -63,12 +63,17 @@ function Content() {
 
             <div className="container">
                 <div className="form text-center pt-3">
-                    <div className="input-container">
-                        <label htmlFor="top-text">Top Text</label>
-                        <input className="mx-2" type="text" id="top-text" name="top" onChange={onInputText} value={meme.top} />
+                    <div className="input-container row">
+                        <div className="col-12 col-md-6">
+                            <label className="form-label" htmlFor="top-text">Top Text</label>
+                            <input className="form-control mx-2" type="text" id="top-text" name="top" onChange={onInputText} value={meme.top} />
+                        </div>
 
-                        <label htmlFor="bottom-text">Bottom Text</label>
-                        <input type="text" className="mx-2" id="bottom-text" name="bottom" onChange={onInputText} value={meme.bottom} />
+                        <div className="col-12 col-md-6">
+                            <label className="form-label" htmlFor="bottom-text">Bottom Text
+                            </label>
+                            <input type="text" className="form-control mx-2" id="bottom-text" name="bottom" onChange={onInputText} value={meme.bottom} />
+                        </div>
                     </div>
                     <button className="btn my-button mt-4" onClick={getMemeImage}>Generate Meme</button>
                 </div>
