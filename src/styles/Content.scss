@@ -1,0 +1,40 @@
+main{
+    flex-grow: 1;
+    
+    .meme-img{
+        width: 100%;
+        max-width: 600px
+    };
+
+    .top,
+    .bottom{
+        position: absolute;
+        color: rgb(255, 255, 255);
+        font-size: 400%;  
+        font-family: 'Hind Madurai', sans-serif;
+        -webkit-text-stroke: 3px black;
+    }
+
+    .top{
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .bottom{
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .my-button{
+        background-color: rgb(153, 0, 255);
+        color: white;
+    &:hover{
+        background-color: rgb(153, 0, 255);
+        box-shadow: 0px 0px 10px rgb(153, 0, 255);
+        color: white;
+    }
+
+    }
+}
